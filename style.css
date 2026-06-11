@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(to right, #dbeafe, #e0f2fe);
+
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.profile-section {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
+}
+
+.profile-img {
+
+    width: 180px;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 4px solid #2563eb;
+}
+
+h1 {
+
+    color: #1e40af;
+
+    margin-bottom: 10px;
+}
+
+h2 {
+
+    color: #0f766e;
+
+    border-bottom: 2px solid #0f766e;
+
+    padding-bottom: 5px;
+}
+
+.section {
+
+    background-color: white;
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
+}
+
+.skills {
+
+    display: flex;
+
+    gap: 20px;
+}
+
+.skill-box {
+
+    flex: 1;
+
+    background-color: #f8fafc;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    border-left: 4px solid #2563eb;
+}
+
+.skill-box:hover {
+
+    background-color: #eef6ff;
+}
+
+ul {
+
+    padding-left: 20px;
+}
+
+li {
+
+    margin-bottom: 6px;
+}
+
+p {
+
+    line-height: 1.6;
+}
+
+.intro {
+
+    font-weight: bold;
+}
+
+.contact {
+
+    background-color: #ecfeff;
+}
+
+footer {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #555;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .profile-section {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .skills {
+
+        flex-direction: column;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+    body {
+
+        padding: 15px;
+    }
+
+    .profile-img {
+
+        width: 140px;
+
+        height: 140px;
+    }
+
+    h1 {
+
+        font-size: 28px;
+    }
+
+    h2 {
+
+        font-size: 22px;
+    }
+
+    .section {
+
+        padding: 15px;
+    }
+}
+.dark-mode {
+    background: #333;
+    color: white;
+}
+
+.dark-mode .section,
+.dark-mode .profile-section,
+.dark-mode .skill-box,
+.dark-mode .contact {
+    background-color: #555;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode li {
+    color: white;
+}
+
+.dark-mode footer {
+    color: white;
+}
+
+.skill-btn {
+
+    padding: 10px 15px;
+
+    margin: 5px;
+
+    border: none;
+
+    background-color: lightgray;
+
+    cursor: pointer;
+}
+
+.active {
+
+    background-color: #2563eb;
+
+    color: white;
+}
+
+.image-effect {
+
+    width: 200px;
+
+    height: 200px;
+
+    border: 4px solid red;
+
+    border-radius: 10px;
+}
+

@@ -2,54 +2,290 @@
 <html>
 
 <head>
-    <title>Dev Saini - Profile</title>
+
+    <title>Dev Saini Portfolio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <h1>Dev Saini</h1>
+    <div class="container">
 
-    <img src="photo.jpg" alt="Dev Saini Photo" width="200">
+        <div class="profile-section">
 
-    <h2>About Me</h2>
-    <p>
-        Hello! My name is Dev Saini. I am 19 years old and I am from
-        Haridwar, Uttarakhand. My hobbies are travelling, playing cricket,
-        and listening to music.
-    </p>
+            <img src="photo.jpg" alt="Dev Saini Photo" class="profile-img">
 
-    <h2>Skills</h2>
+            <div>
 
-    <h3>Technical Skills</h3>
-    <ul>
-        <li>Programming Languages: C, Python, Java</li>
-        <li>Data Structures and Algorithms (DSA)</li>
-        <li>Operating Systems: Windows, Linux Basics</li>
-        <li>Database Management: MySQL, DBMS Basics</li>
-        <li>MS Office Tools: MS Excel, MS Word, MS PowerPoint</li>
-    </ul>
+                <h1>Dev Saini</h1>
 
-    <h3>Soft Skills</h3>
-    <ul>
-        <li>Leadership</li>
-        <li>Self Management</li>
-        <li>Communication Skills</li>
-        <li>Teamwork</li>
-        <li>Problem Solving</li>
-        <li>Time Management</li>
-    </ul>
+                <p class="intro">
+                    B.Tech Computer Science Engineering Student
+                </p>
 
-    <h2>Educational Background</h2>
-    <ul>
-        <li>School: Delhi Public School (DPS), Ranipur</li>
-        <li>College: UPES, Dehradun</li>
-        <li>Course: B.Tech Computer Science and Engineering (CSE)</li>
-        <li>Year: 2nd Year</li>
-    </ul>
+                <p class="intro">
+                    Haridwar, Uttarakhand
+                </p>
+                
+                <button onclick="welcomeUser()">
+                    Welcome Me
+                </button>
 
-    <h2>Contact Information</h2>
-    <p>Email: devsaini0110@gmail.com</p>
-    <p>Phone: 7906211203</p>
+                <p id="welcomeText"></p>
+
+                <button onclick ="toggleTheme()"></button>
+                    Toggle Theme
+                </button>
+
+                <button onclick="changeImage()">
+                    Change Profile Style
+                </button>
+
+            </div>
+
+        </div>
+        <button onclick="toggleAbout()">
+            Show / Hide About Me
+        </button>
+        
+        <input type="text" id="userName" placeholder="Enter Your Name">
+
+        <button onclick="greetUser()">
+            Greet
+        </button>
+
+        <button onclick="changeBackground()">
+            Change Background
+        </button>
+
+<p id="greeting"></p>
+
+<div class="section" id="about">
+        <div class="section" id="about">
+
+            <h2>About Me</h2>
+
+            <p>
+                Hello! My name is Dev Saini. I am a B.Tech Computer Science
+                Engineering student at UPES, Dehradun.
+
+                I am passionate about programming, Artificial Intelligence,
+                and problem solving. I enjoy learning new technologies and
+                applying them through projects and practical work.
+
+                Apart from academics, I enjoy travelling, playing cricket,
+                and listening to music.
+            </p>
+
+        </div>
+
+        <div>
+
+            <p id="copyText">
+                Dev Saini Portfolio
+            </p>
+
+            <button id="Hello">
+                Copy Text
+            </button>
+            
+        </div>
+
+        <div class="section">
+
+            <h2>Skills</h2>
+
+            <div class="skills">
+
+                <div class="skill-box">
+
+                    <h3>Technical Skills</h3>
+
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C Programming</li>
+                        <li>Data Structures & Algorithms</li>
+                        <li>Machine Learning Foundations</li>
+                        <li>DBMS</li>
+                        <li>Windows & Linux Basics</li>
+                        <li>MS Excel & MS Word</li>
+                    </ul>
+
+                </div>
+
+                <div class="skill-box">
+
+                    <h3>Soft Skills</h3>
+
+                    <ul>
+                        <li>Leadership</li>
+                        <li>Communication Skills</li>
+                        <li>Teamwork</li>
+                        <li>Problem Solving</li>
+                        <li>Time Management</li>
+                        <li>Adaptability</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <h2>Click a Skill</h2>
+
+        <div>
+
+            <button class="skill-btn" onclick="highlightSkill(this)">
+                HTML
+            </button>
+
+            <button class="skill-btn" onclick="highlightSkill(this)">
+                CSS
+            </button>
+
+            <button class="skill-btn" onclick="highlightSkill(this)">
+                JavaScript
+            </button>
+
+        </div>
+        
+        <div class="section">
+
+            <h2>Projects</h2>
+
+            <ul>
+
+                <li>
+                    <strong>Loan Management System (Java)</strong><br>
+                    Developed a system for customer loan management and repayment tracking.
+                </li>
+
+                <br>
+
+                <li>
+                    <strong>Domain Generalization Model (Python)</strong><br>
+                    Worked on improving machine learning model performance across diverse environments.
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Experience</h2>
+
+            <ul>
+
+                <li>
+                    AI Technology Intern - NIELIT Haridwar
+                </li>
+
+                <li>
+                    Social Intern - Shehjaar Homes for Senior Citizens
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Character Counter</h2>
+
+            <textarea id="message"
+                oninput="countCharacters()"
+                rows="5"
+                cols="40"
+                placeholder="Type something...">
+            </textarea>
+
+            <p id="counter">
+                Characters Typed: 0
+            </p>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Contact Form</h2>
+
+            <input type="text"
+                id="contactName"
+                placeholder="Enter Your Name">
+
+            <button onclick="validateForm()">
+                Submit
+            </button>
+
+            <p id="formMessage"></p>
+
+        </div>
+        
+        <div class="section">
+
+            <button onclick="showStats()">
+                Show Stats
+            </button>
+
+            <div id="stats" style="display:none;">
+
+                <h3>Portfolio Stats</h3>
+
+                <p>Projects: 2</p>
+
+                <p>Skills: 8+</p>
+
+                <p>Internships: 2</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="section">
+
+            <h2>Educational Background</h2>
+
+            <ul>
+
+                <li>School: Delhi Public School, Ranipur</li>
+
+                <li>College: UPES, Dehradun</li>
+
+                <li>Course: B.Tech Computer Science and Engineering (2nd Year)
+</li>
+
+            </ul>
+
+        </div>
+
+        <div class="section contact">
+
+            <h2>Contact Information</h2>
+
+            <p>Email: Dev.19158@stu.upes.ac.in</p>
+
+            <p>Phone: +91 7906211203</p>
+
+            <p>Location: Haridwar, Uttarakhand</p>
+
+        </div>
+
+        <footer>
+
+            <p>© 2026 Dev Saini Portfolio</p>
+
+        </footer>
+
+    </div>
+<script src="script.js"></script>
 
 </body>
 
